@@ -212,12 +212,14 @@
         <a id="corner"></a>
             <div id="stuff" class="stuff">My Stuff</div>
             <div class="gwatney"><p class="logo_g">Logo Designed on Desing.com<p class="kiko_g">by KIKO STUDIOS<p/><p class="zoom_g">View Larger Image</p><p class="zoom_vsg">View Small Image</p></p></div>
-            <div class="uvclegal"><p class="uvclegal_g">Web Designed<p class="kiko_g">by KIKO STUDIO's<p/><p class="uvczoom_g">View Larger Image</p><p class="uvczoom_vsg">View Small Image</p></p></div>
-            <div class="web"><p>Web Developer</p></div>
-            <div class="expert"><p>Spatial Expert</p></div>
-            <div class="securities"><p>Cyber Securities</p></div>
-            <div class="developer"><p>Web Developer</p></div>
-            <div class="spe"><p>Spatial Expert</p></div>
+            <div class="uvclegal"><p class="uvclegal_g"> UVC Legal Website Designed<p class="kiko_g">by KIKO STUDIO's<p/><p class="uvczoom_g">View Larger Image</p><p class="uvczoom_vsg">View Small Image</p></p></div>
+            <div class="predictive1_"><p class="predictive1_g">Predictive System<br/>Website Designed<p class="pkiko1_g">by KIKO STUDIO's<br/>for Educational Purposes<p/><p class="pzoom1_g">View Larger Image</p><p class="1zoom1_vsg">View Small Image</p></p></div>
+            <div class="predictive2_" hidden><p class="predictive2_g"> UVC Legal Website Designed<p class="kiko_g">by KIKO STUDIO's<p/><p class="pzoom2_g">View Larger Image</p><p class="pzoom2_vsg">View Small Image</p></p></div>
+            <div class="securities" hidden><p>Cyber Securities</p></div>
+            <div class="developer" hidden><p>Web Developer</p></div>
+            <div class="spe" hidden><p>Spatial Expert</p></div>
+            <div class="box-spacing"></div>
+            <div class="opaque_btn_background"><div class="button_right">&GreaterGreater;</div></div>
     </section>
 </section>
 
@@ -397,6 +399,38 @@ $('.zoom_vsg').on('click', function(){
     $('.zoom_g').show(); 
 });
 
+
+$('.zoom_g').on('click', function(){
+$('.zoom_vsg').css({"visibility": "visible", "cursor": "not-allowed"});
+$('.gwatney').addClass('new_zoom_g');
+$('.zoom_vsg').show();
+$('.zoom_vsg').css({"visibility": "visible", "cursor": "pointer"});
+$('.zoom_g').hide();
+});
+
+
+
+$('.uvczoom_vsg').on('click', function(){
+    $('.uvclegal').removeClass('new_uvczoom_g');
+    $('.uvczoom_vsg').hide(); 
+    $('.uvczoom_vsg').css({"visibility": "visible", "cursor": "pointer"}); 
+    $('.uvclegal').addClass('uvclegal'); 
+    $('.uvczoom_g').show(); 
+});
+
+
+
+
+$('.uvczoom_g').on('click', function(){
+$('.uvczoom_vsg').css({"visibility": "visible", "cursor": "not-allowed"});
+$('.uvclegal').addClass('new_uvczoom_g');
+$('.uvczoom_vsg').show();
+$('.uvczoom_vsg').css({"visibility": "visible", "cursor": "pointer"});
+$('.uvczoom_g').hide();
+});
+
+
+
 var txt =  $('.zoom_g').text();
 if (txt == 'View Larger Image')
 {
@@ -420,6 +454,35 @@ $('.zoom_vsg').on('click', function(){
     $('.gwatney').addClass('gwatney'); 
     $('.zoom_g').show(); 
 });
+
+
+$('.uvclegal').addClass('uvclegal');
+    $('.uvczoom_vsg').show();
+
+
+$('.uvczoom_vsg').on('click', function(){
+    $('.uvclegal').removeClass('new_uvczoom_g');
+    $('.uvczoom_vsg').hide(); 
+    $('.uvczoom_vsg').css({"visibility": "visible", "cursor": "pointer"}); 
+    $('.uvclegal').addClass('uvclegal'); 
+    $('.uvczoom_g').show(); 
+});
+
+
+$('.uvczoom_g').on('click', function(){
+$('.uvczoom_vsg').css({"visibility": "visible", "cursor": "not-allowed"});
+$('.uvclegal').addClass('new_uvczoom_g');
+$('.uvczoom_vsg').show();
+$('.uvczoom_vsg').css({"visibility": "visible", "cursor": "pointer"});
+$('.uvczoom_g').hide();
+});
+
+
+
+
+
+
+
 }
 else
 {
@@ -430,6 +493,7 @@ else
     $('.zoom_g').on('click', function(){
 $('.zoom_vsg').css({"visibility": "visible", "cursor": "not-allowed"});
 $('.gwatney').addClass('new_zoom_g'); 
+$('.new_zoom_g').css({'z-index':995});
 $('.zoom_vsg').show();
 $('.zoom_vsg').css({"visibility": "visible", "cursor": "pointer"});
 $('.zoom_g').hide();
@@ -445,7 +509,56 @@ $('.zoom_vsg').on('click', function(){
     $('.zoom_g').show(); 
 });
 
+
+
+$('.uvclegal').addClass('new_uvczoom_g'); 
+    $('.uvczoom_g').show(); 
+
+    $('.uvczoom_g').on('click', function(){
+$('.uvczoom_vsg').css({"visibility": "visible", "cursor": "not-allowed"});
+$('.uvclegal').addClass('new_uvczoom_g'); 
+$('.new_uvczoom_g').css({'z-index':995});
+$('.uvczoom_vsg').show();
+$('.uvczoom_vsg').css({"visibility": "visible", "cursor": "pointer"});
+$('.uvczoom_g').hide();
+});
+
+
+
+$('.uvczoom_vsg').on('click', function(){
+    $('.uvclegal').removeClass('new_uvczoom_g');
+    $('.uvczoom_vsg').hide(); 
+    $('.uvczoom_vsg').css({"visibility": "visible", "cursor": "pointer"}); 
+    $('.uvclegal').addClass('uvclegal'); 
+    $('.uvczoom_g').show(); 
+});
+
+
+
+
 }
+
+function slide_left()
+{
+    $('.gwatney').css('animation', 'shuffle 10s alternate infinite ease-in-out');
+   
+   $('.uvclegal').css({'animation' : 'shuffle 10s alternate infinite ease-in-out'});
+   
+   $('.predictive1_').css('animation', 'shuffle 10s alternate infinite ease-in-out');
+}
+
+$('.button_right').one('click', function(){
+   
+    $('.gwatney').css('animation', 'slide_right 10s forwards');
+   
+    $('.uvclegal').css({'animation' : 'slide_right 10s forwards'});
+    
+    $('.predictive1_').css('animation', 'slide_right 10s forwards');
+
+    $('.button_right').one('mouseout', function(){
+        slide_left().delay(1);
+    });
+});
 
 
 
