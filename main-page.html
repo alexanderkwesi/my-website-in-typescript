@@ -210,14 +210,14 @@
 <section class="purple-container">
     <section id="purple-middle-container" class="purple-middle-container">
         <a id="corner"></a>
-            <div id="stuff" class="stuff">My Stuff</div>
+            <div id="stuff" class="stuff">My Stuff</div><div class="wait-anim"><div class="line">---------------------------------------------------------------</div><a class="mail" href="mailto:seankwesi24@googlemail.com"><p class="p1">Need</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p class="p2">a job done</p>&nbsp;&nbsp;&nbsp;<p class="p3">contact</p>&nbsp;&nbsp;&nbsp;<p class="p4">KIKO STUDIO's</p></a></div>
             <div class="gwatney"><p class="logo_g">Logo Designed on Desing.com<p class="kiko_g">by KIKO STUDIOS<p/><p class="zoom_g">View Larger Image</p><p class="zoom_vsg">View Small Image</p></p></div>
-            <div class="uvclegal"><p class="uvclegal_g"> UVC Legal Website Designed<p class="kiko_g">by KIKO STUDIO's<p/><p class="uvczoom_g">View Larger Image</p><p class="uvczoom_vsg">View Small Image</p></p></div>
-            <div class="predictive1_"><p class="predictive1_g">Predictive System<br/>Website Designed<p class="pkiko1_g">by KIKO STUDIO's<br/>for Educational Purposes<p/><p class="pzoom1_g">View Larger Image</p><p class="1zoom1_vsg">View Small Image</p></p></div>
-            <div class="predictive2_" hidden><p class="predictive2_g"> UVC Legal Website Designed<p class="kiko_g">by KIKO STUDIO's<p/><p class="pzoom2_g">View Larger Image</p><p class="pzoom2_vsg">View Small Image</p></p></div>
-            <div class="securities" hidden><p>Cyber Securities</p></div>
-            <div class="developer" hidden><p>Web Developer</p></div>
-            <div class="spe" hidden><p>Spatial Expert</p></div>
+            <div class="uvclegal"><p class="uvclegal_g">UVC Legal Website Designed<p class="kiko_g">by KIKO STUDIO's<p/><p class="uvczoom_g">View Larger Image</p><p class="uvczoom_vsg">View Small Image</p></p><p class="uvc_website"><a href="https://www.uvclegal.uk">Click to go to Website</a></p></div>
+            <div class="predictive1_"><p class="predictive1_g">Predictive System<br/>Website Designed<p class="pkiko1_g">by KIKO STUDIO's<br/>for Educational Purposes<p/><p class="pzoom1_g">View Larger Image</p><p class="pzoom1_vsg">View Small Image</p></p></div>
+            <div class="predictive2_"><p class="predictive2_g">Predictive System<br/>Website Designed<p class="pkiko2_g">by KIKO STUDIO's<br/>for Educational Purposes<p/><p class="pzoom2_g">View Larger Image</p><p class="pzoom2_vsg">View Small Image</p></p></div>
+            <div class="spatial_db"><p class="spatial_db_g">Spatial Analysis<br/>Website Designed<p class="spkiko_g">by KIKO STUDIO's<br/>for Educational Purposes<p/><p class="spzoom_g">View Larger Image</p><p class="spzoom_vsg">View Small Image</p></p></div>
+            <div class="spatial_db2"><p class="spatial_db2_g">Spatial Analysis<br/>Website Designed<p class="spkiko2_g">by KIKO STUDIO's<br/>for Educational Purposes<p/><p class="spzoom2_g">View Larger Image</p><p class="spzoom2_vsg">View Small Image</p></p></div>
+            <div class="uvcpersonnel"><p class="uvcpersonnel_g">UVC Personnel<br/>Website Designed<p class="uvcpkiko_g">by KIKO STUDIO's<br/>for Educational Purposes<p/><p class="uvcpzoom_g">View Larger Image</p><p class="uvcpzoom_vsg">View Small Image</p></p><p class="uvc2_website"><a href="https://www.uvcpersonnel.net">Click to go to Website</a></p></div>
             <div class="box-spacing"></div>
             <div class="opaque_btn_background"><div class="button_right">&GreaterGreater;</div></div>
     </section>
@@ -431,6 +431,109 @@ $('.uvczoom_g').hide();
 
 
 
+
+$('.pzoom1_g').on('click', function(){
+    $('.pzoom1_vsg').css({"visibility": "visible", "cursor": "not-allowed"});
+    $('.predictive1_').addClass('new_pzoom1_g');
+    $('.pzoom1_vsg').show();
+    $('.pzoom1_vsg').css({"visibility": "visible", "cursor": "pointer"});
+    $('.pzoom1_g').hide();
+});
+
+
+$('.pzoom1_vsg').on('click', function(){
+    $('.predictive1_').removeClass('new_pzoom1_g');
+$('.pzoom1_vsg').css({"visibility": "visible", "cursor": "not-allowed"});
+$('.predictive1_').addClass('predictive1_');
+$('.pzoom1_g').show();
+$('.pzoom1_vsg').css({"visibility": "visible", "cursor": "pointer"});
+$('.pzoom1_vsg').hide();
+});
+
+
+$('.pzoom2_g').on('click', function(){
+    $('.pzoom2_vsg').css({"visibility": "visible", "cursor": "not-allowed"});
+    $('.predictive2_').addClass('new_pzoom2_g');
+    $('.pzoom2_vsg').show();
+    $('.pzoom2_vsg').css({"visibility": "visible", "cursor": "pointer"});
+    $('.pzoom2_g').hide();
+});
+
+
+$('.pzoom2_vsg').on('click', function(){
+    $('.predictive2_').removeClass('new_pzoom2_g');
+$('.pzoom2_vsg').css({"visibility": "visible", "cursor": "not-allowed"});
+$('.predictive2_').addClass('predictive2_');
+$('.pzoom2_g').show();
+$('.pzoom2_vsg').css({"visibility": "visible", "cursor": "pointer"});
+$('.pzoom2_vsg').hide();
+});
+
+
+$('.spzoom_g').on('click', function(){
+    $('.spzoom_vsg').css({"visibility": "visible", "cursor": "not-allowed"});
+    $('.spatial_db').addClass('new_spzoom_g');
+    $('.spzoom_vsg').show();
+    $('.spzoom_vsg').css({"visibility": "visible", "cursor": "pointer"});
+    $('.spzoom_g').hide();
+});
+
+
+$('.spzoom_vsg').on('click', function(){
+$('.spatial_db').removeClass('new_spzoom_g');
+$('.spzoom_vsg').css({"visibility": "visible", "cursor": "not-allowed"});
+$('.spatial_db').addClass('spatial_db');
+$('.spzoom_g').show();
+$('.spzoom_vsg').css({"visibility": "visible", "cursor": "pointer"});
+$('.spzoom_vsg').hide();
+});
+
+
+
+$('.spzoom2_g').on('click', function(){
+    $('.spzoom2_vsg').css({"visibility": "visible", "cursor": "not-allowed"});
+    $('.spatial_db2').addClass('new_spzoom2_g');
+    $('.spzoom2_vsg').show();
+    $('.spzoom2_vsg').css({"visibility": "visible", "cursor": "pointer"});
+    $('.spzoom2_g').hide();
+});
+
+
+$('.spzoom2_vsg').on('click', function(){
+$('.spatial_db2').removeClass('new_spzoom2_g');
+$('.spzoom2_vsg').css({"visibility": "visible", "cursor": "not-allowed"});
+$('.spatial_db2').addClass('spatial_db2');
+$('.spzoom2_g').show();
+$('.spzoom2_vsg').css({"visibility": "visible", "cursor": "pointer"});
+$('.spzoom2_vsg').hide();
+});
+
+
+
+$('.uvcpzoom_g').on('click', function(){
+    $('.uvcpzoom_vsg').css({"visibility": "visible", "cursor": "not-allowed"});
+    $('.uvcpersonnel').addClass('new_uvcpzoom_g');
+    $('.uvcpzoom_vsg').show();
+    $('.uvcpzoom_vsg').css({"visibility": "visible", "cursor": "pointer"});
+    $('.uvcpzoom_g').hide();
+});
+
+
+$('.uvcpzoom_vsg').on('click', function(){
+$('.uvcpersonnel').removeClass('new_uvcpzoom_g');
+$('.uvcpzoom_vsg').css({"visibility": "visible", "cursor": "not-allowed"});
+$('.uvcpersonnel').addClass('uvcpersonnel');
+$('.uvcpzoom_g').show();
+$('.uvcpzoom_vsg').css({"visibility": "visible", "cursor": "pointer"});
+$('.uvcpzoom_vsg').hide();
+});
+
+
+
+
+
+
+
 var txt =  $('.zoom_g').text();
 if (txt == 'View Larger Image')
 {
@@ -478,6 +581,98 @@ $('.uvczoom_g').hide();
 });
 
 
+$('.pzoom1_g').on('click', function(){
+    $('.pzoom1_vsg').css({"visibility": "visible", "cursor": "not-allowed"});
+    $('.predictive1_').addClass('new_pzoom1_g');
+    $('.pzoom1_vsg').show();
+    $('.pzoom1_vsg').css({"visibility": "visible", "cursor": "pointer"});
+    $('.pzoom1_g').hide();
+});
+
+
+$('.pzoom1_vsg').on('click', function(){
+    $('.predictive1_').removeClass('new_pzoom1_g');
+$('.pzoom1_vsg').css({"visibility": "visible", "cursor": "not-allowed"});
+$('.predictive1_').addClass('predictive1_');
+$('.pzoom1_g').show();
+$('.pzoom1_vsg').css({"visibility": "visible", "cursor": "pointer"});
+$('.pzoom1_vsg').hide();
+});
+
+$('.pzoom2_g').on('click', function(){
+    $('.pzoom2_vsg').css({"visibility": "visible", "cursor": "not-allowed"});
+    $('.predictive2_').addClass('new_pzoom2_g');
+    $('.pzoom2_vsg').show();
+    $('.pzoom2_vsg').css({"visibility": "visible", "cursor": "pointer"});
+    $('.pzoom2_g').hide();
+});
+
+
+$('.pzoom2_vsg').on('click', function(){
+    $('.predictive2_').removeClass('new_pzoom2_g');
+$('.pzoom2_vsg').css({"visibility": "visible", "cursor": "not-allowed"});
+$('.predictive2_').addClass('predictive2_');
+$('.pzoom2_g').show();
+$('.pzoom2_vsg').css({"visibility": "visible", "cursor": "pointer"});
+$('.pzoom2_vsg').hide();
+});
+
+$('.spzoom_g').on('click', function(){
+    $('.spzoom_vsg').css({"visibility": "visible", "cursor": "not-allowed"});
+    $('.spatial_db').addClass('new_spzoom_g');
+    $('.spzoom_vsg').show();
+    $('.spzoom_vsg').css({"visibility": "visible", "cursor": "pointer"});
+    $('.spzoom_g').hide();
+});
+
+
+$('.spzoom_vsg').on('click', function(){
+$('.spatial_db').removeClass('new_spzoom_g');
+$('.spzoom_vsg').css({"visibility": "visible", "cursor": "not-allowed"});
+$('.spatial_db').addClass('spatial_db');
+$('.spzoom_g').show();
+$('.spzoom_vsg').css({"visibility": "visible", "cursor": "pointer"});
+$('.spzoom_vsg').hide();
+});
+
+
+$('.spzoom2_g').on('click', function(){
+    $('.spzoom2_vsg').css({"visibility": "visible", "cursor": "not-allowed"});
+    $('.spatial_db2').addClass('new_spzoom2_g');
+    $('.spzoom2_vsg').show();
+    $('.spzoom2_vsg').css({"visibility": "visible", "cursor": "pointer"});
+    $('.spzoom2_g').hide();
+});
+
+
+$('.spzoom2_vsg').on('click', function(){
+$('.spatial_db2').removeClass('new_spzoom2_g');
+$('.spzoom2_vsg').css({"visibility": "visible", "cursor": "not-allowed"});
+$('.spatial_db2').addClass('spatial_db2');
+$('.spzoom2_g').show();
+$('.spzoom2_vsg').css({"visibility": "visible", "cursor": "pointer"});
+$('.spzoom2_vsg').hide();
+});
+
+
+
+$('.uvcpzoom_g').on('click', function(){
+    $('.uvcpzoom_vsg').css({"visibility": "visible", "cursor": "not-allowed"});
+    $('.uvcpersonnel').addClass('new_uvcpzoom_g');
+    $('.uvcpzoom_vsg').show();
+    $('.uvcpzoom_vsg').css({"visibility": "visible", "cursor": "pointer"});
+    $('.uvcpzoom_g').hide();
+});
+
+
+$('.uvcpzoom_vsg').on('click', function(){
+$('.uvcpersonnel').removeClass('new_uvcpzoom_g');
+$('.uvcpzoom_vsg').css({"visibility": "visible", "cursor": "not-allowed"});
+$('.uvcpersonnel').addClass('uvcpersonnel');
+$('.uvcpzoom_g').show();
+$('.uvcpzoom_vsg').css({"visibility": "visible", "cursor": "pointer"});
+$('.uvcpzoom_vsg').hide();
+});
 
 
 
@@ -534,6 +729,99 @@ $('.uvczoom_vsg').on('click', function(){
 });
 
 
+$('.pzoom1_g').on('click', function(){
+    $('.pzoom1_vsg').css({"visibility": "visible", "cursor": "not-allowed"});
+    $('.predictive1_').addClass('new_pzoom1_g');
+    $('.pzoom1_vsg').show();
+    $('.pzoom1_vsg').css({"visibility": "visible", "cursor": "pointer"});
+    $('.pzoom1_g').hide();
+});
+
+
+$('.pzoom1_vsg').on('click', function(){
+$('.predictive1_').removeClass('new_pzoom1_g');
+$('.pzoom1_vsg').css({"visibility": "visible", "cursor": "not-allowed"});
+$('.predictive1_').addClass('predictive1_');
+$('.pzoom1_g').show();
+$('.pzoom1_vsg').css({"visibility": "visible", "cursor": "pointer"});
+$('.pzoom1_vsg').hide();
+});
+
+$('.pzoom2_g').on('click', function(){
+    $('.pzoom2_vsg').css({"visibility": "visible", "cursor": "not-allowed"});
+    $('.predictive2_').addClass('new_pzoom2_g');
+    $('.pzoom2_vsg').show();
+    $('.pzoom2_vsg').css({"visibility": "visible", "cursor": "pointer"});
+    $('.pzoom2_g').hide();
+});
+
+
+$('.pzoom2_vsg').on('click', function(){
+    $('.predictive2_').removeClass('new_pzoom2_g');
+$('.pzoom2_vsg').css({"visibility": "visible", "cursor": "not-allowed"});
+$('.predictive2_').addClass('predictive2_');
+$('.pzoom2_g').show();
+$('.pzoom2_vsg').css({"visibility": "visible", "cursor": "pointer"});
+$('.pzoom2_vsg').hide();
+});
+
+$('.spzoom_g').on('click', function(){
+    $('.spzoom_vsg').css({"visibility": "visible", "cursor": "not-allowed"});
+    $('.spatial_db').addClass('new_spzoom_g');
+    $('.spzoom_vsg').show();
+    $('.spzoom_vsg').css({"visibility": "visible", "cursor": "pointer"});
+    $('.spzoom_g').hide();
+});
+
+
+$('.spzoom_vsg').on('click', function(){
+$('.spatial_db').removeClass('new_spzoom_g');
+$('.spzoom_vsg').css({"visibility": "visible", "cursor": "not-allowed"});
+$('.spatial_db').addClass('spatial_db');
+$('.spzoom_g').show();
+$('.spzoom_vsg').css({"visibility": "visible", "cursor": "pointer"});
+$('.spzoom_vsg').hide();
+});
+
+
+$('.spzoom2_g').on('click', function(){
+    $('.spzoom2_vsg').css({"visibility": "visible", "cursor": "not-allowed"});
+    $('.spatial_db2').addClass('new_spzoom2_g');
+    $('.spzoom2_vsg').show();
+    $('.spzoom2_vsg').css({"visibility": "visible", "cursor": "pointer"});
+    $('.spzoom2_g').hide();
+});
+
+
+$('.spzoom2_vsg').on('click', function(){
+$('.spatial_db2').removeClass('new_spzoom_2g');
+$('.spzoom2_vsg').css({"visibility": "visible", "cursor": "not-allowed"});
+$('.spatial_db2').addClass('spatial_db2');
+$('.spzoom2_g').show();
+$('.spzoom2_vsg').css({"visibility": "visible", "cursor": "pointer"});
+$('.spzoom2_vsg').hide();
+});
+
+
+
+$('.uvcpzoom_g').on('click', function(){
+    $('.uvcpzoom_vsg').css({"visibility": "visible", "cursor": "not-allowed"});
+    $('.uvcpersonnel').addClass('new_uvcpzoom_g');
+    $('.uvcpzoom_vsg').show();
+    $('.uvcpzoom_vsg').css({"visibility": "visible", "cursor": "pointer"});
+    $('.uvcpzoom_g').hide();
+});
+
+
+$('.uvcpzoom_vsg').on('click', function(){
+$('.uvcpersonnel').removeClass('new_uvcpzoom_g');
+$('.uvcpzoom_vsg').css({"visibility": "visible", "cursor": "not-allowed"});
+$('.uvcpersonnel').addClass('uvcpersonnel');
+$('.uvcpzoom_g').show();
+$('.uvcpzoom_vsg').css({"visibility": "visible", "cursor": "pointer"});
+$('.uvcpzoom_vsg').hide();
+});
+
 
 
 }
@@ -545,15 +833,31 @@ function slide_left()
    $('.uvclegal').css({'animation' : 'shuffle 10s alternate infinite ease-in-out'});
    
    $('.predictive1_').css('animation', 'shuffle 10s alternate infinite ease-in-out');
+
+   $('.predictive2_').css('animation', 'shuffle 10s alternate infinite ease-in-out');
+   
+   $('.spatial_db').css({'animation':'shuffle 10s alternate infinite ease-in-out'});
+   
+   $('.spatial_db2').css('animation', 'shuffle 10s alternate infinite ease-in-out');
+
+   $('.uvcpersonnel').css('animation', 'shuffle 10s alternate infinite ease-in-out');
 }
 
-$('.button_right').one('click', function(){
+$('.button_right').on('click', function(){
    
     $('.gwatney').css('animation', 'slide_right 10s forwards');
    
     $('.uvclegal').css({'animation' : 'slide_right 10s forwards'});
     
     $('.predictive1_').css('animation', 'slide_right 10s forwards');
+
+    $('.predictive2_').css('animation', 'slide_right 10s forwards');
+   
+    $('.spatial_db').css({'animation' : 'slide_right 10s forwards'});
+    
+    $('.spatial_db2').css('animation', 'slide_right 10s forwards');
+
+    $('.uvcpersonnel').css('animation', 'slide_right 10s forwards');
 
     $('.button_right').one('mouseout', function(){
         slide_left().delay(1);
