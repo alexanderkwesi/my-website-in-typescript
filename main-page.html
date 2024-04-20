@@ -223,15 +223,59 @@
     </section>
 </section>
 
-<section class="black-container">
-    <section id="black-middle-container" class="black-middle-container">
+<section id="yellow-transition" class="yellow-transition"></section>
+<section class="yellow-container">
+    <section id="yellow-middle-container" class="yellow-middle-container">
         <a id="corner"></a>
-            <div>My Corner</div>
-            <div>Spatial Expert</div>
-            <div>Cyber Securities</div>
-            <div>Web Developer</div>
+        <h1 class="scri">Power Up With A Calculator Rest API</h1>
+        <section class="calculators">
+        <input type="Number" class="calculator_field"/>     
+        <div class="_1">1</div>
+        <div class="_2">2</div>
+        <div class="_3">3</div>
+        <div class="_4">4</div>
+        <div class="_5">5</div>
+        </section>
+        <section class="calculators2_">
+        <div class="_6">6</div>
+        <div class="_7">7</div>
+        <div class="_8">8</div>
+        <div class="_9">9</div>
+        <div class="_0">0</div>
+        </section>
+        <section class="calculators3_">
+        <div class="_log">log</div>
+        <div class="_cos">cos</div>
+        <div class="_sin">sin</div> 
+        <div class="_tan">tan</div> 
+        <div class="_add">+</div>
+        </section>
+        <section class="calculator4_">
+        <div class="_subtract">-</div>
+        <div class="_multiply">x</div> 
+        <div class="_divide">/</div> 
+        <div class="_backspace"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="24" fill="currentColor" class="bi bi-backspace-fill _btn_backspace" viewBox="0 0 16 16">
+            <path d="M15.683 3a2 2 0 0 0-2-2h-7.08a2 2 0 0 0-1.519.698L.241 7.35a1 1 0 0 0 0 1.302l4.843 5.65A2 2 0 0 0 6.603 15h7.08a2 2 0 0 0 2-2zM5.829 5.854a.5.5 0 1 1 .707-.708l2.147 2.147 2.146-2.147a.5.5 0 1 1 .707.708L9.39 8l2.146 2.146a.5.5 0 0 1-.707.708L8.683 8.707l-2.147 2.147a.5.5 0 0 1-.707-.708L7.976 8z"/>
+          </svg></div>
+        </section>
+        <script src="./calculator.js"></script>
     </section>
 </section>
+
+
+<section id="grey-transition" class="grey-transition"></section>
+<section class="grey-container">
+    <section id="grey-middle-container" class="grey-middle-container">
+        <a id="corner"></a>
+        <h1>Creativity Brings Great Ideas</h1>
+        <button id="toggleBulb">Toggle Bulb</button>
+        <button id="increaseBrightness">Increase Brightness</button>
+        <button id="decreaseBrightness">Decrease Brightness</button>
+        <div class="bulb"></div>
+        <script src="./My First Rest API  - Bulb/bulb.js"></script>
+    </section>
+</section>
+
 <script type="text/javascript" src="middle.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
 
@@ -252,8 +296,10 @@
         $('body').css('background-color', 'white');  
         $('.purple-middle-container').hide(); 
         $('.purple-transition').hide(); 
-        $('.black-middle-container').hide();
-        $('.black-transition').hide(); 
+        $('.yellow-middle-container').hide();
+        $('.yellow-transition').hide(); 
+        $('.grey-middle-container').hide();
+        $('.grey-transition').hide(); 
         
     }
 
@@ -264,17 +310,45 @@
         $('.purple-middle-container').show();
         $('body').css('background-color', 'white'); 
         $('.second-div-my-corner-middle-container').hide();
-        $('.black-middle-container').hide();
-        $('.black-middle-container').hide();
-        $('.black-transition').hide(); 
+        $('.yellow-middle-container').hide();
+        $('.yellow-transition').hide(); 
+        $('.transition').hide();
+        $('.grey-middle-container').hide();
+        $('.grey-transition').hide(); 
+    }
+
+    function hiddencornercyan()
+    {
+       $('.yellow-transition').css('visibility', 'visible'); 
+       $(".yellow-transition").removeClass("anim-trans-yellow");
+        $('.yellow-middle-container').show();
+        $('body').css('background-color', 'white'); 
+        $('.second-div-my-corner-middle-container').hide();
+        $('.purple-middle-container').hide();
+        $('.grey-middle-container').hide();
+        $('.grey-transition').hide(); 
         $('.transition').hide();
     }
 
 
 
+    function hiddencornergrey()
+    {
+       $('.grey-transition').css('visibility', 'visible'); 
+       $(".grey-transition").removeClass("anim-trans-grey");
+        $('.yellow-middle-container').show();
+        $('body').css('background-color', 'white'); 
+        $('.second-div-my-corner-middle-container').hide();
+        $('.purple-middle-container').hide();
+        $('.yellow-middle-container').hide();
+        $('.yellow-transition').hide(); 
+        $('.transition').hide();
+    }
+
+
 $(".one").on('click', function() {
-    $('.transition').css('visibility', 'visible');
-  $(".transition").addClass("anim-trans");
+$('.transition').css('visibility', 'visible');
+$(".transition").addClass("anim-trans");
 $('.second-div-my-corner-middle-container').css('visibility', 'visible');
 $('.container').hide();
 $('.containers').hide();
@@ -284,7 +358,8 @@ $('.body_aside').hide();
 $('.contain').hide();
 $('.img_container').hide();
 $('.purple-transition').css('visibility', 'hidden');
-$('.black-container').hide();
+$('.yellow-container').hide();
+$('.grey-container').hide();
 $('.second-div-my-corner-middle-container').addClass('middle_container_over');
 hiddencorner().delay(1);
 });
@@ -293,8 +368,11 @@ function mouse() {
 
     $('.transition').css('visibility', 'hidden');
     $('.purple-transition').css('visibility', 'hidden');
+    $('.grey-transition').css('visibility', 'hidden');
+    $('.yellow-transition').css('visibility', 'hidden');
     $('.body_container').css('visibility', 'visible');
-    $('.black-middle-container').css('visibility', 'visible'); 
+    $('.grey-middle-container').removeClass('grey_middle_container_over'); 
+    $('.yellow-middle-container').removeClass('yellow_middle_container_over'); 
     $('.purple-middle-container').removeClass('purple_middle_container_over');
     $('.second-div-my-corner-middle-container').removeClass('middle_container_over');
 }
@@ -308,18 +386,19 @@ mouse.delay(1);
 });
 
 $('.two').click(function() {
-        $('.purple-transition').css('visibility', 'visible');
+  $('.purple-transition').css('visibility', 'visible');
   $(".purple-transition").addClass("anim-trans-purple");
   $('.purple-middle-container').css('visibility', 'visible');
   $('.img_container').hide();
   $('.container').hide();
   $('.containers').hide();
-$('.body_used').hide();
-$('.body_').hide();
-$('.body_aside').hide();
-$('.contain').hide();
-$('.transition').hide();
-  $('.black-container').hide();
+  $('.body_used').hide();
+  $('.body_').hide();
+  $('.body_aside').hide();
+  $('.contain').hide();
+  $('.transition').hide();
+  $('.yellow-container').hide();
+  $('.grey-container').hide();
   $('.second-div-my-corner-middle-container').hide();
   $('.purple-middle-container').addClass('purple_middle_container_over');
   hiddencornerpurple().delay(1);
@@ -329,20 +408,22 @@ $('.transition').hide();
 
 
 $('._3').click(function() {
-    $('.black-transition').css('visibility', 'visible');
-  $(".black-transition").addClass("anim-trans-black");
-  $('.transition').css('visibility', 'visible'); 
-       $(".transition").addClass("anim-trans");
+  $('.yellow-transition').css('visibility', 'visible');
+  $('.yellow-transition').addClass('anim-trans-yellow');
+  $('.yellow-middle-container').css('visibility', 'visible');
+  $('.img_container').hide();
   $('.container').hide();
   $('.containers').hide();
-$('.body_used').hide();
-$('.body_').hide();
-$('.body_aside').hide();
-$('.contain').hide();
+  $('.body_used').hide();
+  $('.body_').hide();
+  $('.body_aside').hide();
+  $('.contain').hide();
+  $(".transition").hide();
+  $('.grey-container').hide();
   $('.purple-transition').css('visibility', 'hidden'); 
   $('.second-div-my-corner-middle-container').hide();
-  hiddencorner().delay(1);
-
+  $('.yellow-middle-container').addClass('yellow_middle_container_over');
+  hiddencornercyan().delay(1);
 });
 
 
