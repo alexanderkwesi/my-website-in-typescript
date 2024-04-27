@@ -11,7 +11,7 @@ var apps = express();
 //integrations: [contextLinesIntegration()],
 //});
 const corsOptions = {
-origin: 'http://127.0.0.1:5000/data', // Allow only this origin to access
+origin: 'https://alexanderkwesi.github.io/my-website-in-typescript/data', // Allow only this origin to access
 methods: 'GET,POST', // Allow only GET and POST methods
 allowedHeaders: 'Content-Type', // Allow only these headers
 optionsSuccessStatus: 200 // Some legacy browsers (IE11, various SmartTVs) choke on 204
@@ -28,7 +28,7 @@ var message = {};
 // Route to handle requests
 apps.get('/data', function (request, response) {
     // Send the data as JSON
-    response.setHeader("Access-Control-Allow-Origin", "http://127.0.0.1:5500/test.html");
+    response.setHeader("Access-Control-Allow-Origin", "https://alexanderkwesi.github.io/my-website-in-typescript/test.html");
     response.setHeader("Access-Control-Allow-Methods", "GET, POST");
     response.setHeader("Access-Control-Allow-Headers", "Content-Type");
     response.setHeader("Access-Control-Allow-Credentials", "true");
