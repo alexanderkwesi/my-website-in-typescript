@@ -19,15 +19,14 @@ const apps = express();
 
 
 
-//const corsOptions = {
-    //origin: 'http://127.0.0.1:3000/data', // Allow only this origin to access
-    //methods: 'GET,POST', // Allow only GET and POST methods
-    //allowedHeaders: 'Content-Type', // Allow only these headers
-    //optionsSuccessStatus: 200 // Some legacy browsers (IE11, various SmartTVs) choke on 204
+const corsOptions = {
+    origin: 'hhttps://alexanderkwesi.github.io/my-website-in-typescript/data', // Allow only this origin to access
+    methods: 'GET,POST', // Allow only GET and POST methods
+    allowedHeaders: 'Content-Type', // Allow only these headers
+    optionsSuccessStatus: 200 // Some legacy browsers (IE11, various SmartTVs) choke on 204
+};
 
-//};
-
-//apps.use(cors(corsOptions));
+apps.use(cors(corsOptions));
 
 // Middleware to parse JSON bodies
 apps.use(express.json());
@@ -41,7 +40,7 @@ let message = {};
 // Route to handle requests
 apps.get('/data', (request:Request, response:Response) => {
   // Send the data as JSON
-  response.setHeader("Access-Control-Allow-Origin", "http://127.0.0.1:5500/test.html");
+  response.setHeader("Access-Control-Allow-Origin", "https://alexanderkwesi.github.io/my-website-in-typescript/test.html");
   response.setHeader("Access-Control-Allow-Methods", "GET, POST");
   response.setHeader("Access-Control-Allow-Headers", "Content-Type");
   response.setHeader("Access-Control-Allow-Credentials", "true");
