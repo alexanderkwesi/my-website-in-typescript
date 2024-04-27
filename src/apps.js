@@ -11,7 +11,7 @@ var apps = express();
 //integrations: [contextLinesIntegration()],
 //});
 const corsOptions = {
-origin: 'http://127.0.0.1:3000/data', // Allow only this origin to access
+origin: 'http://127.0.0.1:5000/data', // Allow only this origin to access
 methods: 'GET,POST', // Allow only GET and POST methods
 allowedHeaders: 'Content-Type', // Allow only these headers
 optionsSuccessStatus: 200 // Some legacy browsers (IE11, various SmartTVs) choke on 204
