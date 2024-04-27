@@ -10,13 +10,13 @@ var apps = express();
 //dsn:'https://7cb23d3b7a50d7b18d1aa10757778341@o4507159146594304.ingest.de.sentry.io/4507159149215824',
 //integrations: [contextLinesIntegration()],
 //});
-//const corsOptions = {
-//origin: 'http://127.0.0.1:3000/data', // Allow only this origin to access
-//methods: 'GET,POST', // Allow only GET and POST methods
-//allowedHeaders: 'Content-Type', // Allow only these headers
-//optionsSuccessStatus: 200 // Some legacy browsers (IE11, various SmartTVs) choke on 204
-//};
-//apps.use(cors(corsOptions));
+const corsOptions = {
+origin: 'http://127.0.0.1:3000/data', // Allow only this origin to access
+methods: 'GET,POST', // Allow only GET and POST methods
+allowedHeaders: 'Content-Type', // Allow only these headers
+optionsSuccessStatus: 200 // Some legacy browsers (IE11, various SmartTVs) choke on 204
+};
+apps.use(cors(corsOptions));
 // Middleware to parse JSON bodies
 apps.use(express.json());
 // Sample data
