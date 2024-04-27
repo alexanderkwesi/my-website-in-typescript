@@ -61,8 +61,8 @@ document.getElementById('test_value').addEventListener('click', function(){
         if (data_s != '')
         {
           alert(response.text(data_s.message));
-          data_s_ = response.get('http://127.0.0.1:5000/data');
-          document.getElementById('test_value').innerText = response.text(data_s.message);
+          data_s_ = response.get('https://alexanderkwesi.github.io/my-website-in-typescript/data');
+          document.getElementById('test_value').innerText = response.text(data_s_.message);
         }
         else
         {
