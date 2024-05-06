@@ -183,6 +183,9 @@ body
     margin-top:1.5%;
     border-radius:50px; 
 }
+.linkedIn{
+  color:black;
+}
 .linkedin
 {
     font-weight:bolder;
@@ -199,6 +202,10 @@ body
     margin-top:5;
     z-index: 1;
    
+}
+.Discord
+{
+  color:black;
 }
 .linkedin_img
 {
