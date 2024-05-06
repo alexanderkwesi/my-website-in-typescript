@@ -6,12 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <meta name="description" content="Snowpack Application" />
     <link rel="stylesheet" type="text/css" href="./index.css"/>
-    <script type="text/javascript" src="/CustomEase.min.js"></script>
-    <srcipt type="text/javascript" src="/minified/Draggable.min.js"></srcipt>
-    <script type="text/javascript" src="/minified/EaselPlugin.min.js"></script>
-    <script type="text/javascript" src="/minified/EasePack.min.js"></script>
-    <script type="text/javascript" src="/minified/Flip.min.js"></script>
-    <script type="text/javascript" src="/minified/gsap.min.js"></script>
    <!-- <script type="text/javascript" src="./jquery-3.7.1.min.js"></script>-->
     <script type="text/javascript" src="./jquery-3.7.1.js"></script>
     <title> TypeScript: My, World! </title>
@@ -72,11 +66,11 @@
             <a href="#stuff"></a>
             My Stuff
         </div>
-        <div class="_3">
+        <div class="_Power">
             <a href="#powerup"></a>
             Power Up
         </div>
-        <div class="_4">
+        <div class="_Flip">
             <a href="#theflip"></a>
             Monetiser - The Flip
         </div>
@@ -229,19 +223,19 @@
         <a id="corner"></a>
         <h1 class="scri">Power Up With A Calculator Rest API</h1>
         <section class="calculators">
-        <input type="Number" class="calculator_field"/>     
-        <div class="_1">1</div>
-        <div class="_2">2</div>
-        <div class="_3">3</div>
-        <div class="_4">4</div>
-        <div class="_5">5</div>
+        <input type="Text" id="calculator_field" class="calculator_field"/>     
+        <div id='_1' class="_1">1</div>
+        <div id='_2' class="_2">2</div>
+        <div id='_3' class="_3">3</div>
+        <div id='_4' class="_4">4</div>
+        <div id='_5' class="_5">5</div>
         </section>
         <section class="calculators2_">
-        <div class="_6">6</div>
-        <div class="_7">7</div>
-        <div class="_8">8</div>
-        <div class="_9">9</div>
-        <div class="_0">0</div>
+        <div id='_6' class="_6">6</div>
+        <div id='_7' class="_7">7</div>
+        <div id='_8' class="_8">8</div>
+        <div id='_9' class="_9">9</div>
+        <div id='_0' class="_0">0</div>
         </section>
         <section class="calculators3_">
         <div class="_log">log</div>
@@ -252,13 +246,14 @@
         </section>
         <section class="calculator4_">
         <div class="_subtract">-</div>
-        <div class="_multiply">x</div> 
+        <div class="_multiply">*</div> 
         <div class="_divide">/</div> 
         <div class="_backspace"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="24" fill="currentColor" class="bi bi-backspace-fill _btn_backspace" viewBox="0 0 16 16">
             <path d="M15.683 3a2 2 0 0 0-2-2h-7.08a2 2 0 0 0-1.519.698L.241 7.35a1 1 0 0 0 0 1.302l4.843 5.65A2 2 0 0 0 6.603 15h7.08a2 2 0 0 0 2-2zM5.829 5.854a.5.5 0 1 1 .707-.708l2.147 2.147 2.146-2.147a.5.5 0 1 1 .707.708L9.39 8l2.146 2.146a.5.5 0 0 1-.707.708L8.683 8.707l-2.147 2.147a.5.5 0 0 1-.707-.708L7.976 8z"/>
           </svg></div>
+          <div id="equity" class="equity">=</div> 
         </section>
-        <script src="./calculator.js"></script>
+        <script src="./src/calculator.js"></script>
     </section>
 </section>
 
@@ -267,30 +262,62 @@
 <section class="grey-container">
     <section id="grey-middle-container" class="grey-middle-container">
         <a id="corner"></a>
-        <h1>Creativity Brings Great Ideas</h1>
-        <button id="toggleBulb">Toggle Bulb</button>
-        <button id="increaseBrightness">Increase Brightness</button>
-        <button id="decreaseBrightness">Decrease Brightness</button>
-        <div class="bulb"></div>
-        <script src="./My First Rest API  - Bulb/bulb.js"></script>
+        <h1 class="monetiser">Monetiser The Flip - The Cost of My Services</h1>
+        <section class="web_developer">
+            <div class="web_">Web Developer</div>
+            <div class="front_">Front End Development in any Language you choose</div>
+            <div class="responsive_">Responsive Design for Mobile, Desktop, and Laptop</div>
+            <div class="User_">User Expereince (UX) Design - Crating  intuitive layouts, and navigation</div>
+            <div class="Website_">Website Maintenance</div>
+            <div class="money_1">£ 3000</div>
+        </section>
+        <section class="full_stack_developer">
+            <div class="full_">Full Stack Developer</div>
+            <div class="front_end">Front End Development</div>
+            <div class="back_">Back End Development</div>
+            <div class="Api">API Development</div>
+            <div class="database_">Database Design and Maintenance</div>
+            <div class="money_2">£ 5000</div>
+        </section>
+        <section class="software_developer">
+            <div class="soft_">Software Developer</div>
+            <div class="sdev_">Software Development</div>
+            <div class="custom_">Custom Software Solutions</div>
+            <div class="app_">Application Architecture</div>
+            <div class="per_">Perfomance Optimisation</div>
+            <div class="">£ 9000</div>
+        </section>
     </section>
 </section>
 
 <script type="text/javascript" src="middle.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
 
-<div class="cursor small"></div>
-<div class="cursor big"></div>
+<div class="small"></div>
+<div class="big"></div>
     
    <!-- <script type="module" src="index.js"></script> -->
 </body>
 
 </html>
 <script type="text/javascript">
+    window.onload = function() {
+    if (window.jQuery) {  
+        // jQuery is loaded  
+       // alert("jQuery is loaded!");
+        $('.uvc_website').hide();
+        $('.uvc2_website').hide();
+    } else {
+        // jQuery is not loaded
+        //alert("jQuery is not loaded");
+       
+    }
+}
 
     function hiddencorner()
     {
        $('.transition').css('visibility', 'visible'); 
+       $('.transition').show();
        $(".transition").removeClass("anim-trans");
         $('.second-div-my-corner-middle-container').show();
         $('body').css('background-color', 'white');  
@@ -300,12 +327,15 @@
         $('.yellow-transition').hide(); 
         $('.grey-middle-container').hide();
         $('.grey-transition').hide(); 
+        $('.uvc_website').hide();
+        $('.uvc2_website').hide();
         
     }
 
     function hiddencornerpurple()
     {
        $('.purple-transition').css('visibility', 'visible'); 
+       $('.purple-transition').show();
        $(".purple-transition").removeClass("anim-trans-purple");
         $('.purple-middle-container').show();
         $('body').css('background-color', 'white'); 
@@ -314,12 +344,15 @@
         $('.yellow-transition').hide(); 
         $('.transition').hide();
         $('.grey-middle-container').hide();
-        $('.grey-transition').hide(); 
+        $('.grey-transition').hide();
+        $('.uvc_website').hide();
+        $('.uvc2_website').hide(); 
     }
 
     function hiddencornercyan()
     {
        $('.yellow-transition').css('visibility', 'visible'); 
+       $('.yellow-transition').show();
        $(".yellow-transition").removeClass("anim-trans-yellow");
         $('.yellow-middle-container').show();
         $('body').css('background-color', 'white'); 
@@ -328,6 +361,8 @@
         $('.grey-middle-container').hide();
         $('.grey-transition').hide(); 
         $('.transition').hide();
+        $('.uvc_website').hide();
+        $('.uvc2_website').hide();
     }
 
 
@@ -335,18 +370,22 @@
     function hiddencornergrey()
     {
        $('.grey-transition').css('visibility', 'visible'); 
+       $('.grey-transition').show();
        $(".grey-transition").removeClass("anim-trans-grey");
-        $('.yellow-middle-container').show();
+        $('.grey-middle-container').show();
         $('body').css('background-color', 'white'); 
         $('.second-div-my-corner-middle-container').hide();
         $('.purple-middle-container').hide();
         $('.yellow-middle-container').hide();
         $('.yellow-transition').hide(); 
         $('.transition').hide();
+        $('.uvc_website').hide();
+        $('.uvc2_website').hide();
     }
 
 
 $(".one").on('click', function() {
+event.preventDefault();
 $('.transition').css('visibility', 'visible');
 $(".transition").addClass("anim-trans");
 $('.second-div-my-corner-middle-container').css('visibility', 'visible');
@@ -361,11 +400,12 @@ $('.purple-transition').css('visibility', 'hidden');
 $('.yellow-container').hide();
 $('.grey-container').hide();
 $('.second-div-my-corner-middle-container').addClass('middle_container_over');
+$('.uvc_website').hide();
+$('.uvc2_website').hide();
 hiddencorner().delay(1);
 });
 
 function mouse() {
-
     $('.transition').css('visibility', 'hidden');
     $('.purple-transition').css('visibility', 'hidden');
     $('.grey-transition').css('visibility', 'hidden');
@@ -386,6 +426,7 @@ mouse.delay(1);
 });
 
 $('.two').click(function() {
+  event.preventDefault();
   $('.purple-transition').css('visibility', 'visible');
   $(".purple-transition").addClass("anim-trans-purple");
   $('.purple-middle-container').css('visibility', 'visible');
@@ -401,13 +442,20 @@ $('.two').click(function() {
   $('.grey-container').hide();
   $('.second-div-my-corner-middle-container').hide();
   $('.purple-middle-container').addClass('purple_middle_container_over');
+  $('.uvc_website').show();
+  $('.uvc2_website').show();
   hiddencornerpurple().delay(1);
 });
 
+$('.two').mouseover(function(){
+    event.preventDefault();
+    $('.uvc_website').show();
+    $('.uvc2_website').show();
+});
 
 
-
-$('._3').click(function() {
+$('._Power').click(function() {
+  event.preventDefault();
   $('.yellow-transition').css('visibility', 'visible');
   $('.yellow-transition').addClass('anim-trans-yellow');
   $('.yellow-middle-container').css('visibility', 'visible');
@@ -420,18 +468,36 @@ $('._3').click(function() {
   $('.contain').hide();
   $(".transition").hide();
   $('.grey-container').hide();
-  $('.purple-transition').css('visibility', 'hidden'); 
+  $('.purple-transition').hide(); 
   $('.second-div-my-corner-middle-container').hide();
   $('.yellow-middle-container').addClass('yellow_middle_container_over');
+  $('.uvc_website').hide();
+  $('.uvc2_website').hide();
   hiddencornercyan().delay(1);
 });
 
 
-// $('.container').mouseout(function(){
-   // $('.container').fadeOut(1000);
-   // $('.img_container').css('margin-top', '-5%');
-
-//});
+$('._Flip').click(function() {
+    event.preventDefault();
+    $('.grey-transition').css('visibility', 'visible');
+    $('.grey-transition').addClass('anim-trans-grey');
+    $('.grey-middle-container').css('visibility', 'visible');
+    $('.img_container').hide();
+    $('.container').hide();
+    $('.containers').hide();
+    $('.body_used').hide();
+    $('.body_').hide();
+    $('.body_aside').hide();
+    $('.contain').hide();
+    $(".transition").hide();
+    $('.yellow-container').hide();
+    $('.purple-transition').hide();
+    $('.second-div-my-corner-middle-container').hide();
+    $('.grey-middle-container').addClass('grey_middle_container_over');
+    $('.uvc_website').hide();
+    $('.uvc2_website').hide();
+    hiddencornergrey().delay(1);
+  });
 
 const cursorSmall = document.querySelector('.small');
 
@@ -439,15 +505,29 @@ const cursorBig = document.querySelector('.big');
 
 
 const positionElement = (e)=> {
-  const mouseY = e.offsetY;
-  const mouseX = e.offsetX;
+const mouseY = e.offsetY;
+const mouseX = e.offsetX;
    
   
-  cursorSmall.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
-  cursorBig.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
+cursorSmall.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
+cursorBig.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
 }
 
-window.addEventListener('mousemove', positionElement);
+window.addEventListener('mouseover', positionElement);
+
+$(document).ready(function() {
+  
+  $('.calculator_field').val(0);
+ 
+  });
+
+// $('.container').mouseout(function(){
+   // $('.container').fadeOut(1000);
+   // $('.img_container').css('margin-top', '-5%');
+
+//});
+
+
 
 
 $('.title').mouseover(function(){
@@ -497,6 +577,8 @@ $('.uvczoom_vsg').on('click', function(){
     $('.uvczoom_vsg').css({"visibility": "visible", "cursor": "pointer"}); 
     $('.uvclegal').addClass('uvclegal'); 
     $('.uvczoom_g').show(); 
+    $('.uvc_website').show();
+    $('.uvc2_website').show();
 });
 
 
@@ -508,6 +590,8 @@ $('.uvclegal').addClass('new_uvczoom_g');
 $('.uvczoom_vsg').show();
 $('.uvczoom_vsg').css({"visibility": "visible", "cursor": "pointer"});
 $('.uvczoom_g').hide();
+$('.uvc_website').show();
+$('.uvc2_website').show();
 });
 
 
@@ -523,7 +607,7 @@ $('.pzoom1_g').on('click', function(){
 
 
 $('.pzoom1_vsg').on('click', function(){
-    $('.predictive1_').removeClass('new_pzoom1_g');
+$('.predictive1_').removeClass('new_pzoom1_g');
 $('.pzoom1_vsg').css({"visibility": "visible", "cursor": "not-allowed"});
 $('.predictive1_').addClass('predictive1_');
 $('.pzoom1_g').show();
@@ -597,6 +681,8 @@ $('.uvcpzoom_g').on('click', function(){
     $('.uvcpzoom_vsg').show();
     $('.uvcpzoom_vsg').css({"visibility": "visible", "cursor": "pointer"});
     $('.uvcpzoom_g').hide();
+    $('.uvc_website').show();
+    $('.uvc2_website').show();
 });
 
 
@@ -607,6 +693,8 @@ $('.uvcpersonnel').addClass('uvcpersonnel');
 $('.uvcpzoom_g').show();
 $('.uvcpzoom_vsg').css({"visibility": "visible", "cursor": "pointer"});
 $('.uvcpzoom_vsg').hide();
+$('.uvc_website').show();
+$('.uvc2_website').show();
 });
 
 
@@ -618,6 +706,7 @@ $('.uvcpzoom_vsg').hide();
 var txt =  $('.zoom_g').text();
 if (txt == 'View Larger Image')
 {
+
     $('.gwatney').addClass('gwatney');
     $('.zoom_vsg').show();
 
@@ -743,6 +832,8 @@ $('.uvcpzoom_g').on('click', function(){
     $('.uvcpzoom_vsg').show();
     $('.uvcpzoom_vsg').css({"visibility": "visible", "cursor": "pointer"});
     $('.uvcpzoom_g').hide();
+    $('.uvc_website').show();
+    $('.uvc2_website').show();
 });
 
 
@@ -753,6 +844,8 @@ $('.uvcpersonnel').addClass('uvcpersonnel');
 $('.uvcpzoom_g').show();
 $('.uvcpzoom_vsg').css({"visibility": "visible", "cursor": "pointer"});
 $('.uvcpzoom_vsg').hide();
+$('.uvc_website').show();
+$('.uvc2_website').show();
 });
 
 
@@ -762,6 +855,7 @@ $('.uvcpzoom_vsg').hide();
 }
 else
 {
+   
 
     $('.gwatney').addClass('new_zoom_g'); 
     $('.zoom_g').show(); 
@@ -891,6 +985,8 @@ $('.uvcpzoom_g').on('click', function(){
     $('.uvcpzoom_vsg').show();
     $('.uvcpzoom_vsg').css({"visibility": "visible", "cursor": "pointer"});
     $('.uvcpzoom_g').hide();
+    $('.uvc_website').show();
+    $('.uvc2_website').show();
 });
 
 
@@ -901,6 +997,8 @@ $('.uvcpersonnel').addClass('uvcpersonnel');
 $('.uvcpzoom_g').show();
 $('.uvcpzoom_vsg').css({"visibility": "visible", "cursor": "pointer"});
 $('.uvcpzoom_vsg').hide();
+$('.uvc_website').show();
+$('.uvc2_website').show();
 });
 
 
@@ -946,9 +1044,202 @@ $('.button_right').on('click', function(){
 });
 
 
+$('.calculators').on('mouseover', function(){
+    var elem = $('.calculator_field');
+  setTimeout(function() {
+    elem.toggleClass( "calculator_field_focus", elem.is( ":focus" ) );
+  }, 0 );
+});
+
+</script>
+<script type="text/javascript">
+
+$(document).ready(function() {
+   
+const lists  = [];
+
+
+$('._1').on('click',function(){
+
+        $('.calculator_field').val(1);
+        lists.push(1);
+        var input = lists.join().toString().replace(/,/g, '');
+        $('.calculator_field').val(input); 
+        
+});
+$('._2').click(function(){
+
+        $('.calculator_field').val(2);
+        lists.push(2);
+        /*var input = lists.splice(0, lists.length);
+        $('calculator_field').val(input);
+        alert(input, lists);*/
+        var input = lists.join().toString().replace(/,/g, '');
+        $('.calculator_field').val(input); 
+});
+
+$('._3').click(function(){
+    $('.calculator_field').val(3);
+    lists.push(3);
+    var input = lists.join().toString().replace(/,/g, '');
+        $('.calculator_field').val(input); 
+});
+
+$('._4').click(function(){
+    $('.calculator_field').val(4);
+    lists.push(4);
+    var input = lists.join().toString().replace(/,/g, '');
+    $('.calculator_field').val(input); 
+});
+
+$('._5').click(function(){
+    $('.calculator_field').val(5);
+    lists.push(5);
+    var input = lists.join().toString().replace(/,/g, '');
+        $('.calculator_field').val(input); 
+});
+
+$('._6').click(function(){
+    $('.calculator_field').val(6);
+    lists.push(6);
+    var input = lists.join().toString().replace(/,/g, '');
+        $('.calculator_field').val(input); 
+});
+
+$('._7').click(function(){
+    $('.calculator_field').val(7);
+    lists.push(7);
+    var input = lists.join().toString().replace(/,/g, '');
+        $('.calculator_field').val(input); 
+});
+
+$('._8').click(function(){
+    $('.calculator_field').val(8);
+    lists.push(8);
+    var input = lists.join().toString().replace(/,/g, '');
+        $('.calculator_field').val(input); 
+});
+
+$('._9').click(function(){
+    $('.calculator_field').val(9);
+    lists.push(9);
+    var input = lists.join().toString().replace(/,/g, '');
+        $('.calculator_field').val(input); 
+});
+
+$('._0').click(function(){
+
+    $('.calculator_field').val(0);
+    lists.push(0);
+    var input = lists.join().toString().replace(/,/g, '');
+        $('.calculator_field').val(input); 
+});
+
+
+const this_operation =  []; 
+
+
+$('._log').on('click', function(){
+    lists.push(' log ');
+    alert(lists);
+    $('.calculator_field').val(' log ');
+    return this_operation.push('log');
+       
+});
 
 
 
+/*$('._log','._cos','._sin','._tan', '._add','._subtract','._multiply','._divide').click(function(){
+    lists.pop();
+    const first_value_ = input;
+    alert(first_value_);
+    const second_value = input;
+    
+});*/
+const first_value_ = [];
+const second_value_ = [];
+let operation = '';
+let requestData = {};
+let apiUrl = '';
+var  first_value = '';
+var second_value = '';
+const data = {};
+$('.equity').on('click', function(){
+    if (this_operation[0] == 'log')
+    {
 
+        var index = lists.indexOf(' log ');
+        
+        lists.splice(index, lists.length);
+
+        first_value_.push(lists);
+
+        first_value = String(first_value_).replaceAll(',','');
+        alert(first_value);
+        var values_ = $('.calculator_field').val();
+        alert(values_.length);
+        alert(values_[values_.length-1]);
+        second_value_.push(values_[values_.length-1]);
+        second_value = second_value_[0];
+        alert(second_value);
+        operation = this_operation[0];
+        alert(operation);
+      
+
+ 
+        //requestData = {
+            number://first_value
+        //};
+        // Corrected requestData usage and API call
+            requestData = first_value; // Assuming 'first_value' is correctly set elsewhere in your code
+            alert(requestData);
+            //apiUrl = "http://127.0.0.1:3000/log";
+            apiUrl = "http://127.0.0.1:3000/log?number=" + encodeURIComponent(first_value);
+
+            
+
+                                
+
+        const data = { number:first_value };
+        // Function to send POST data to the API
+
+        postData(apiUrl);
+
+            async function postData(apiUrl = "") {
+                try {
+                    // Default options are marked with *
+                    const response = await fetch(apiUrl, {
+                        method: "GET", // *GET, POST, PUT, DELETE, etc.
+                        mode: "cors", // no-cors, *cors, same-origin
+                        cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
+                        credentials: "same-origin", // include, *same-origin, omit
+                        headers: {
+                            "Content-Type": "application/json",
+                            // 'Content-Type': 'application/x-www-form-urlencoded',
+                        },
+                        redirect: "follow", // manual, *follow, error
+                        referrerPolicy: "no-referrer", // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
+                        body: JSON.stringify(data), // body data type must match "Content-Type" header
+                    });
+
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    alert(response.json()); // parses JSON response into native JavaScript objects
+                } catch (error) {
+                    console.error('Error:', error.message);
+                }
+
+                    
+            }
+            
+        }
+
+        });
+               // postData(apiUrl, { number: first_value }).then((data) => {
+                //    console.log(data); // JSON data parsed by `data.json()` call
+                //});
+
+}); 
 
 </script>
