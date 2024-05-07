@@ -3654,3 +3654,230 @@ width:30%;z-index:5; box-shadow: none;}
   font-weight: 900;
   font-size:34px;
 }*/
+
+
+
+
+/*#  The Flip   #*/
+
+.monetiser
+{
+  font-size:24px;
+  color:rgb(8, 0, 3);
+  padding:3%;
+  margin-top:0vmin;
+  margin-left:-53%;
+  text-decoration:overline;
+  text-transform:uppercase;
+  position:fixed;
+ 
+  
+}
+.monetiser:hover
+{
+  animation: monetiser 5s forwards;
+}
+@keyframes monetiser{
+  10%
+  {
+    transform:translateX(24px); color: snow;
+  }
+}
+
+.web_developer
+{
+  margin-top:15%;
+  margin-left:3%;
+  border-radius: 25px;
+  border:5px solid salmon;
+  background-color:cadetblue;
+  width:400px;
+  height:450px;
+  padding: 3%;
+  text-align: center;
+}
+.web_
+{
+  font-size: 24px;
+  color:navy;
+  text-decoration:overline;
+  text-transform: uppercase;
+  padding:10%;
+}
+.front_
+{
+  font-size: 18px;
+  color:snow;
+  text-transform:capitalize;
+  line-height: 130%;
+  white-space: wrap;
+
+}
+.responsive_
+{
+  font-size: 18px;
+  color:snow;
+  text-transform:capitalize;
+  line-height: 130%;
+  white-space: wrap;
+}
+.User_
+{
+  font-size: 18px;
+  color:snow;
+  text-transform:capitalize;
+  line-height: 130%;
+  white-space: wrap;
+}
+.Website_
+{
+  font-size: 18px;
+  color:snow;
+  text-transform:capitalize;
+  line-height: 130%;
+  white-space: wrap;
+}
+.money_1
+{
+  font-size: 24px;
+  color:#36395A;
+  text-transform:capitalize;
+  line-height: 130%;
+  white-space: wrap;
+  padding:10%;
+}
+
+
+
+
+.full_stack_developer
+{
+  margin-top:15%;
+  margin-left:8%;
+  border-radius: 25px;
+  border:5px solid salmon;
+  background-color:darkgoldenrod;
+  width:400px;
+  height:450px;
+  padding: 3%;
+  text-align: center;
+}
+.full_
+{
+  font-size: 24px;
+  color:navy;
+  text-decoration:overline;
+  text-transform: uppercase;
+  padding:10%;
+  white-space: wrap;
+  line-height: 130%;
+}
+.front_end
+{
+  font-size: 18px;
+  color:snow;
+  text-transform:capitalize;
+  line-height: 130%;
+  white-space: wrap;
+
+}
+.back_
+{
+  font-size: 18px;
+  color:snow;
+  text-transform:capitalize;
+  line-height: 130%;
+  white-space: wrap;
+}
+.Api
+{
+  font-size: 18px;
+  color:snow;
+  text-transform:capitalize;
+  line-height: 130%;
+  white-space: wrap;
+}
+.database_
+{
+  font-size: 18px;
+  color:snow;
+  text-transform:capitalize;
+  line-height: 130%;
+  white-space: wrap;
+}
+.money_2
+{
+  font-size: 24px;
+  color:#36395A;
+  text-transform:capitalize;
+  line-height: 130%;
+  white-space: wrap;
+  padding:10%;
+}
+
+
+
+.software_developer
+{
+  margin-top:15%;
+  margin-left:8%;
+  border-radius: 25px;
+  border:5px solid salmon;
+  background-color:chocolate;
+  width:400px;
+  height:450px;
+  padding: 3%;
+  text-align: center;
+}
+.soft_
+{
+  font-size: 24px;
+  color:navy;
+  text-decoration:overline;
+  text-transform: uppercase;
+  padding:10%;
+  white-space: wrap;
+  line-height: 130%;
+}
+.sdev_
+{
+  font-size: 18px;
+  color:snow;
+  text-transform:capitalize;
+  line-height: 130%;
+  white-space: wrap;
+
+}
+.custom_
+{
+  font-size: 18px;
+  color:snow;
+  text-transform:capitalize;
+  line-height: 130%;
+  white-space: wrap;
+}
+.app_
+{
+  font-size: 18px;
+  color:snow;
+  text-transform:capitalize;
+  line-height: 130%;
+  white-space: wrap;
+}
+.per_
+{
+  font-size: 18px;
+  color:snow;
+  text-transform:capitalize;
+  line-height: 130%;
+  white-space: wrap;
+}
+.money_3
+{
+  font-size: 24px;
+  color:#36395A;
+  text-transform:capitalize;
+  line-height: 130%;
+  white-space: wrap;
+  padding:10%;
+}
