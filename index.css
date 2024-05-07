@@ -1191,14 +1191,14 @@ main {
 	z-index: 15;
 	top: 50%;
 	left: 50%;
-	width: 80%;
+	width: 96%;
 	height: 110%;
 	margin: -25px 0 0 -25px;
 	pointer-events:all;
 	/*background: #333;*/
 	background: var(--color-text);
 	border-radius: 0%;
-	animation: greyloaderAnim 5s ease alternate forwards;
+	animation: greyloaderAnim 5s ease forwards;
 }
 .yellow_middle_container_over {
 	content: '';
@@ -1206,14 +1206,14 @@ main {
 	z-index: 15;
 	top: 50%;
 	left: 50%;
-	width: 80%;
-	height: 800px;
+	width: 96%;
+	height: 110%;
 	margin: -25px 0 0 -25px;
 	pointer-events:all;
 	/*background: #333;*/
 	background: var(--color-text);
 	border-radius: 0%;
-	animation: yellowloaderAnim 5s ease alternate forwards;
+	animation: yellowloaderAnim 5s ease forwards;
 }
 .purple_middle_container_over {
 	content: '';
@@ -1247,7 +1247,7 @@ main {
 }
 
 @keyframes greyloaderAnim {
-	0% {
+	0%, 10%, 20%, 30% {
 		transform: scale3d(0.5,0.5,1);
     border-radius:0%;
     z-index:13;
@@ -1271,7 +1271,7 @@ main {
 }
 
 @keyframes yellowloaderAnim {
-	0% {
+	0%, 10%, 20%, 30% {
 		transform: scale3d(0.5,0.5,1);
     border-radius:0%;
     z-index:13;
@@ -1289,7 +1289,6 @@ main {
     margin-top:21%;
     z-index:12;
     overflow-y:hidden;
-    
   }
   120%{
     transform: skewX(-5deg) translateX(-50px);
