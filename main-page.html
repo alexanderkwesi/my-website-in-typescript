@@ -356,6 +356,8 @@
        $('.yellow-transition').css('visibility', 'visible'); 
        $('.yellow-transition').show();
        $(".yellow-transition").removeClass("anim-trans-yellow");
+       /*$('.yellow-middle-container').addClass('yellow_middle_corner_over');*/
+      /* $('.yellow-middle-container').css('visibility', 'visible');*/
         $('.yellow-middle-container').show();
         $('body').css('background-color', 'white'); 
         $('.second-div-my-corner-middle-container').hide();
@@ -371,14 +373,16 @@
 
     function hiddencornergrey()
     {
-       $('.grey-transition').css('visibility', 'visible'); 
+       $('.grey-transition').css('visibility', 'visible');
+       /*$('.grey-middle-container').css('visibility', 'visible'); */
        $('.grey-transition').show();
+       /*$('.grey-middle-container').addClass('grey_middle_corner_over');*/
+       $('.grey-middle-container').show();
        $(".grey-transition").removeClass("anim-trans-grey");
-        $('.grey-middle-container').show();
         $('body').css('background-color', 'white'); 
         $('.second-div-my-corner-middle-container').hide();
         $('.purple-middle-container').hide();
-        $('.yellow-middle-container').hide();
+        /*$('.yellow-middle-container').hide();*/
         $('.yellow-transition').hide(); 
         $('.transition').hide();
         $('.uvc_website').hide();
@@ -449,12 +453,16 @@ $('.two').click(function() {
   hiddencornerpurple().delay(1);
 });
 
-$('.two').mouseover(function(){
+$('.purple-middle-container').mouseover(function(){
     event.preventDefault();
     $('.uvc_website').show();
     $('.uvc2_website').show();
 });
-
+$('.purple-middle-container').mouseout(function(){
+    event.preventDefault();
+    $('.uvc_website').hide();
+    $('.uvc2_website').hide();
+});
 
 $('._Power').click(function() {
   event.preventDefault();
@@ -473,6 +481,7 @@ $('._Power').click(function() {
   $('.purple-transition').hide(); 
   $('.second-div-my-corner-middle-container').hide();
   $('.yellow-middle-container').addClass('yellow_middle_container_over');
+  $('.yellow-middle-container').show();
   $('.uvc_website').hide();
   $('.uvc2_website').hide();
   hiddencornercyan().delay(1);
@@ -496,6 +505,7 @@ $('._Flip').click(function() {
     $('.purple-transition').hide();
     $('.second-div-my-corner-middle-container').hide();
     $('.grey-middle-container').addClass('grey_middle_container_over');
+    $('.grey-middle-container').show();
     $('.uvc_website').hide();
     $('.uvc2_website').hide();
     hiddencornergrey().delay(1);

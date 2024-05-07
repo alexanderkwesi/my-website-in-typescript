@@ -949,13 +949,13 @@ main {
   color: black;
   cursor: pointer;
   font-family: "JetBrains Mono",monospace;
-  width:94%;
+  width:96%;
   height:1100px;
   justify-content:center;
   line-height: 1;
   list-style: none;
   overflow: hidden;
-  padding-left: 16px;
+  padding-left: 13px;
   padding-right: 16px;
   position: relative;
   text-align: left;
@@ -968,7 +968,7 @@ main {
   will-change: box-shadow,transform;
   font-size: 18px;
   float:inline-start;
-  left:8%;
+  left:0%;
   top:120px;
   z-index: 13;
   flex-direction: column;
@@ -1135,7 +1135,7 @@ main {
   line-height: 1;
   list-style: none;
   overflow: hidden;
-  padding-left: 16px;
+  padding-left: 13px;
   padding-right: 16px;
   position: relative;
   text-align: left;
@@ -1148,7 +1148,7 @@ main {
   will-change: box-shadow,transform;
   font-size: 18px;
   float:inline-start;
-  left:8%;
+  left:0%;
   top:120px;
   z-index: 13;
 
@@ -1221,7 +1221,7 @@ main {
 	z-index: 15;
 	top: 50%;
 	left: 50%;
-	width: 80%;
+	width: 96%;
 	height: 110%;
 	margin: -25px 0 0 -25px;
 	pointer-events:all;
@@ -1236,7 +1236,7 @@ main {
 	z-index: 15;
 	top: 50%;
 	left: 50%;
-	width: 80%;
+	width: 96%;
 	height: 110%;
 	margin: -25px 0 0 -25px;
 	pointer-events: all;
@@ -1308,10 +1308,10 @@ main {
     transform: translateX(50%);
     transform: translateY(-40%);
     height: 90%;
-    width:94%;
+    width:96%;
     border-radius:0%;
     background-color:blueviolet;
-    margin-left: -39%;
+    margin-left: -42%;
     z-index:12;
   }
   120%{
@@ -1330,10 +1330,10 @@ main {
     transform: translateX(50%);
     transform: translateY(-40%);
     height: 90%;
-    width:94%;
+    width:96%;
     border-radius:0%;
     background-color: yellow;
-    margin-left: -39%;
+    margin-left:-42%;
     z-index:12;
   }
   120%{  transform: skewX(-5deg) translateX(-50px);}
@@ -1516,9 +1516,8 @@ width:30%;z-index:5; box-shadow: none;}
   left:8%;
   top:120px;
   z-index: 13;
-  
-
 }
+
 /*.yellow-middle-container:focus {
   box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
 }*/
